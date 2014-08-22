@@ -4,7 +4,8 @@
 //
 //  Created by David Wang on 8/22/14.
 //
-//
+//This helps determine what the current and next levels are going to be and look like
+//getInstance also helps to grab plist items
 
 #include "GameManager.h"
 

@@ -6,7 +6,7 @@
 //
 //This is the Level Select page. All artwork for the page is created
 //here. The level selection process references LevelSelect and LevelLayer
-//in order to choose the correct one. 
+//in order to choose the correct level to start. 
 
 #include "LevelScene.h"
 #include "LevelLayer.h"
@@ -45,15 +45,15 @@ bool LevelScene::init()
     //setTag makes it easier to identify node
     for (int i=0; i<LAYER_NUMBER; ++i) {
         if (i==0) {
-            auto page = LevelSelectPage::create("HelloWorld.png", i);
+            auto page = LevelSelect::create("HelloWorld.png", i);
             page->setTag(i);
             scrollView->addNode(page);
         }else if(i==1){
-            auto page = LevelSelectPage::create("CloseNormal.png", i);
+            auto page = LevelSelect::create("CloseNormal.png", i);
             page->setTag(i);
             scrollView->addNode(page);
         }else if(i==2){
-            auto page = LevelSelectPage::create("CloseSelected.png", i);
+            auto page = LevelSelect::create("CloseSelected.png", i);
             page->setTag(i);
             scrollView->addNode(page);
         }

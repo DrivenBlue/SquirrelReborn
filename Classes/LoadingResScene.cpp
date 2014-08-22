@@ -4,7 +4,9 @@
 //
 //  Created by David Wang on 8/21/14.
 //
-//
+//All of the individual resources not in plists will be stored in here. The progress bar is beneficial
+//as it prevents lag when loading the screen and uses up less memory when resources are loaded in the
+//beginning instead of runtime. We can later replace the progress bar with a company logo or whatever.
 
 #include "LoadingResScene.h"
 #include "TitleScene.h"
@@ -103,6 +105,6 @@ void LoadingResScene::logic(float dt)
     {
         transitionScene();
         //SimpleAudioEngine::getInstance()->playBackgroundMusic(FileUtils::getInstance()->fullPathForFilename("sound/music.mp3").c_str(), true);
-        SimpleAudioEngine::getInstance()->setBackgroundMusicVolume(0.1f);
+        //SimpleAudioEngine::getInstance()->setBackgroundMusicVolume(0.1f);
     }
 }

@@ -50,7 +50,6 @@
 		2133A50519A72A0600F509A0 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2133A4FD19A72A0600F509A0 /* Player.cpp */; };
 		2133A50619A72A0600F509A0 /* Predator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2133A4FF19A72A0600F509A0 /* Predator.cpp */; };
 		2133A50E19A72E3800F509A0 /* WorldLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2133A50C19A72E3800F509A0 /* WorldLayer.cpp */; };
-		2133A51319A731AC00F509A0 /* PlayLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2133A51119A731AC00F509A0 /* PlayLayer.cpp */; };
 		2133A51819A7373A00F509A0 /* levelInfo_0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2133A51419A7373A00F509A0 /* levelInfo_0.plist */; };
 		2133A51919A7373A00F509A0 /* levelInfo_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2133A51519A7373A00F509A0 /* levelInfo_1.plist */; };
 		2133A51A19A7373A00F509A0 /* levelInfo_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2133A51619A7373A00F509A0 /* levelInfo_2.plist */; };
@@ -296,8 +295,6 @@
 		2133A50019A72A0600F509A0 /* Predator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Predator.h; sourceTree = "<group>"; };
 		2133A50C19A72E3800F509A0 /* WorldLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldLayer.cpp; sourceTree = "<group>"; };
 		2133A50D19A72E3800F509A0 /* WorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldLayer.h; sourceTree = "<group>"; };
-		2133A51119A731AC00F509A0 /* PlayLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayLayer.cpp; sourceTree = "<group>"; };
-		2133A51219A731AC00F509A0 /* PlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayLayer.h; sourceTree = "<group>"; };
 		2133A51419A7373A00F509A0 /* levelInfo_0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levelInfo_0.plist; sourceTree = "<group>"; };
 		2133A51519A7373A00F509A0 /* levelInfo_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levelInfo_1.plist; sourceTree = "<group>"; };
 		2133A51619A7373A00F509A0 /* levelInfo_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levelInfo_2.plist; sourceTree = "<group>"; };
@@ -433,8 +430,6 @@
 				2133A4ED19A7248700F509A0 /* GameManager.h */,
 				2133A50C19A72E3800F509A0 /* WorldLayer.cpp */,
 				2133A50D19A72E3800F509A0 /* WorldLayer.h */,
-				2133A51119A731AC00F509A0 /* PlayLayer.cpp */,
-				2133A51219A731AC00F509A0 /* PlayLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -832,7 +827,6 @@
 				2133A4C019A6E8E300F509A0 /* TitleScene.cpp in Sources */,
 				2133A50619A72A0600F509A0 /* Predator.cpp in Sources */,
 				2133A50519A72A0600F509A0 /* Player.cpp in Sources */,
-				2133A51319A731AC00F509A0 /* PlayLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

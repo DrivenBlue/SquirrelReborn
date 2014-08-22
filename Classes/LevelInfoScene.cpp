@@ -4,7 +4,8 @@
 //
 //  Created by David Wang on 8/22/14.
 //
-//
+//This is the scene inbetween level select and the actual game. Kept in case we wanted
+//some kind of cinematic or briefing of the game before starting. 
 
 #include "LevelInfoScene.h"
 #include "WorldLayer.h"

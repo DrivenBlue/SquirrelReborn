@@ -4,7 +4,10 @@
 //
 //  Created by David Wang on 8/21/14.
 //
-//
+//This class uses childbytag in order to grab images listed in the plists. We can later
+//make our own. Whenever a new image is needed, add it to the loadingrespage, update the number
+//of loaded res variable, and then go to LevelLayer.cpp and change the shortslidelength accordingly.
+//This also includes touch events for the menu. 
 
 #include "LevelLayer.h"
 #include "LevelScene.h"

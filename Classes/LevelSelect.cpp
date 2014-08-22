@@ -4,7 +4,7 @@
 //
 //  Created by David Wang on 8/21/14.
 //
-//
+//Sets the rows/columns/and tile images displayed in the level select page
 
 #include "LevelSelect.h"
 #include "LevelInfoScene.h"
@@ -15,9 +15,9 @@ using namespace CocosDenshion;
 #define LEVEL_ROW (3)
 #define LEVEL_COL (2)
 
-LevelSelectPage* LevelSelectPage::create(const std::string& bgName, int level)
+LevelSelect* LevelSelect::create(const std::string& bgName, int level)
 {
-    LevelSelectPage *pRet = new LevelSelectPage();
+    LevelSelect *pRet = new LevelSelect();
     if (pRet && pRet->initLevelPage(bgName, level))
     {
         pRet->autorelease();
@@ -31,7 +31,7 @@ LevelSelectPage* LevelSelectPage::create(const std::string& bgName, int level)
     }
 }
 
-bool LevelSelectPage::initLevelPage(const std::string& bgName, int level)
+bool LevelSelect::initLevelPage(const std::string& bgName, int level)
 {
     if (!Node::init())
     {
@@ -58,7 +58,7 @@ bool LevelSelectPage::initLevelPage(const std::string& bgName, int level)
                                               "card_1.png",
                                               "card_2.png",
                                               "card_3.png",
-                                              CC_CALLBACK_1(LevelSelectPage::menuStartCallback, this));
+                                              CC_CALLBACK_1(LevelSelect::menuStartCallback, this));
             item->setAnchorPoint(Point(0 ,0));
             item->setPosition(Point(width, height));
             item->setTag(row * LEVEL_ROW + col + level * LEVEL_ROW * LEVEL_COL);
@@ -78,7 +78,7 @@ bool LevelSelectPage::initLevelPage(const std::string& bgName, int level)
     return true;
 }
 
-void LevelSelectPage::menuStartCallback(Ref* pSender)
+void LevelSelect::menuStartCallback(Ref* pSender)
 {
     auto button = (Sprite *)pSender;
     //SimpleAudioEngine::getInstance()->playEffect(FileUtils::getInstance()->fullPathForFilename("sound/button.wav").c_str(), false);

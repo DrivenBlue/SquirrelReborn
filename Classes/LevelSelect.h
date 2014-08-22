@@ -14,12 +14,12 @@
 
 USING_NS_CC;
 
-class LevelSelectPage: public Node
+class LevelSelect: public Node
 {
 public:
     
     bool initLevelPage(const std::string& bgName, int level);
-    static LevelSelectPage* create(const std::string& bgName, int level);
+    static LevelSelect* create(const std::string& bgName, int level);
     void menuStartCallback(Ref* pSender);
 };
 

@@ -4,7 +4,7 @@
 //
 //  Created by David Wang on 8/21/14.
 //
-//
+//All the UI for the Title screen, if we wanted High scores, etc this is where we would do it
 
 #include "TitleScene.h"
 #include "LevelScene.h"
