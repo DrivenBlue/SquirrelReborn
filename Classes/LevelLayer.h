@@ -14,7 +14,7 @@
 
 USING_NS_CC;
 
-#define SHORTEST_SLIDE_LENGTH (3)
+#define SHORTEST_SLIDE_LENGTH (12)
 
 class LevelLayer: public Layer
 {

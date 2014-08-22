@@ -14,7 +14,7 @@ using namespace CocosDenshion;
 
 LoadingResScene::LoadingResScene()
 :numberOfLoadedRes(0)
-,totalOfLoadedRes(3)
+,totalOfLoadedRes(12)
 ,progressBar(NULL)
 {
 }
@@ -77,7 +77,15 @@ void LoadingResScene::loadResources()
     Director::getInstance()->getTextureCache()->addImageAsync("HelloWorld.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
     Director::getInstance()->getTextureCache()->addImageAsync("CloseNormal.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
     Director::getInstance()->getTextureCache()->addImageAsync("CloseSelected.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
-    
+    Director::getInstance()->getTextureCache()->addImageAsync("card_1.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("card_2.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("card_3.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("start_1.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("start_2.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("btn_back.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("btn_back_press.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("BC_War.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
+    Director::getInstance()->getTextureCache()->addImageAsync("pixuirrel.png", CC_CALLBACK_1(LoadingResScene::loadingCallBack, this));
 }
 
 void LoadingResScene::loadingCallBack(cocos2d::Texture2D *texture)
